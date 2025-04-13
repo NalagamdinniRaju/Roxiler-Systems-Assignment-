@@ -22,7 +22,7 @@ const UserStoresList = () => {
   const fetchStores = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/stores', {
+      const response = await axios.get('https://roxiler-systems-assignment-backend-y31l.onrender.com/api/stores', {
         headers: { Authorization: `Bearer ${token}` },
         params: { search }
       });
